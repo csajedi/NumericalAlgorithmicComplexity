@@ -13,8 +13,16 @@ The basic computational task involves computing the entire space of a given n-st
 
 ## Concepts
 
-### Formalism of the Turing Machine
+### Universal Turing Machine
+
+### Coding Theorem Method
+
+### Universal Distribution
 
 ## Methodology
 
+### Limitations for Tractability
+
 For this experiment we are mainly interested in comparing implementation approaches and capturing the essence of the task. Details provided for exploiting symmetry to reduce the search space are left as a future exercise. And we provide a cutoff for machines at 500 steps to avoid non-halting machines and reproduce previous results.
+
+### Computing of the Turing Machine
