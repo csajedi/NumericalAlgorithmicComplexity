@@ -1,2 +1,0 @@
-// This source file contains an attempt to implement the Universal Turing machine with some constraints and evaluate the complexity measure of an input string.
-// The UTM implementation is based on rosetta code
