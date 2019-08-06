@@ -13,7 +13,7 @@ type
 ##  struct which contains the result of a transition of the TM
 
 type
-  transition_result* {.bycopy.} = object
+  transition_result*  = object
     control_state*: cint       ##  new state
     write_symbol*: symbol      ##  written symbol
 
@@ -24,13 +24,13 @@ var dir*: direction
 ##  the state of the TM
 
 type
-  turing_machine_state* {.bycopy.} = object
-    control_state*: cint       ##  current state
-    head_position*: cint       ##  position of the head in the tape
-    max_head_position*: cint   ##  number of the most-right visited cell (>=0)
-    min_head_position*: cint   ##  number of the most-left visited cell  (<=0)
-    tape_r_size*: cint         ##  size of the right tape
-    tape_l_size*: cint         ##  size of the left tape
+  turing_machine_state* = object
+    control_state*: int       ##  current state
+    head_position*: int       ##  position of the head in the tape
+    max_head_position*: int   ##  number of the most-right visited cell (>=0)
+    min_head_position*: int   ##  number of the most-left visited cell  (<=0)
+    tape_r_size*: int         ##  size of the right tape
+    tape_l_size*: int         ##  size of the left tape
     tape_r*: ptr symbol         ##  right tape (array of symbols)
     tape_l*: ptr symbol         ##  left tape (array of symbols)
 
@@ -38,7 +38,7 @@ type
 ##  General data of the TM
 
 type
-  turing_machine* {.bycopy.} = object
+  turing_machine* = object
     number_colors*: cint       ##  number of symbols
     number_states*: cint       ##  number of states
     halting_state*: cint       ##  halting state
